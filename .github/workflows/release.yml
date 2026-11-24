@@ -28,7 +28,7 @@ jobs:
     if: ${{ vars.AWS_ROLE_ARN != '' }}
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Log in to AWS with OIDC (no stored keys)
         uses: aws-actions/configure-aws-credentials@v4
